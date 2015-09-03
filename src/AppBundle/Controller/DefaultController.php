@@ -18,4 +18,18 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
         ));
     }
+
+    public function navTaskAction()
+    {
+        return $this->render('AppBundle:Task:navTask.html.twig', [
+            'navTasks' => 2
+        ]);
+    }
+
+    public function navTask2Action()
+    {
+        return $this->render('AppBundle:Task:navTask2.html.twig', [
+            'navTasks' => 2
+        ]);
+    }
 }

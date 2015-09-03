@@ -39,6 +39,8 @@
                     <a href="http://symfony.com/doc/{{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION')[:3] }}/book/page_creation.html">
                         How to create your first page in Symfony
                     </a>
+                    {{ render(controller('AppBundle:Default:navTask')) }}
+                    {{ render(controller('AppBundle:Default:navTask2')) }}
                 </p>
             </div>
 
